@@ -104,19 +104,20 @@
     margin: 10px 180px 0px 10px;
 }
 .cart {
-    width: 40px;
-    height: 40px;
-    padding: 30px 0px 0px 0px;
+    width: 50px;
+    height: 50px;
+    padding: 20px 0px 0px 0px;
     position: right;
 }
 .nav-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 15px;
-    font-family: raleway-light;
+    font-size: 14px;
+    font-family: raleway;
+    text-transform: uppercase;
     color: #e2574c;
-    padding: 10px;
+    padding: 2px 10px 10px 10px;
 }
 .banner {
     display: flex;
@@ -132,13 +133,13 @@
 .banner h1 {
     padding: 20px;
     font-family: raleway-light;
-    font-size: 16px;
+    font-size: 14px;
 
 }
 .banner h2 {
     padding: 20px;
     font-family: playfairdisplay-regular;
-    font-size: 30px;
+    font-size: 2em;
 }
 
 section {
@@ -151,18 +152,18 @@ section {
 
 .description span {
     font-family: playfairdisplay-italic;
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .description b {
     font-family: playfairdisplay-italic;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2em;
 }
 
 .description p {
     font-family: raleway-light;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 2em;
     padding: 15px;
 }
@@ -188,8 +189,7 @@ section {
     background-size: 100%;
     width: 100%;
     border-style: solid;
-    border-image: 0px 0px 5px 0px;
-    /* border-width: 0px 0px 6px 0px; */
+    border-width: 0px 0px 6px 0px;
     border-color: white;
     
 }
@@ -205,9 +205,9 @@ section {
     display: contain;
     height: 180px;
     background-size: 100%;
-    width: 50%;
+    width: 49.2%;
     border-style: solid;
-    /* border-width: 0px 0px 0px 0px; */
+    border-width: 0px 3px 3px 0px;
     border-color: white;
 }
 .glasses {
@@ -220,9 +220,9 @@ section {
     background: url("../images/glasses-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
-    width: 50%;
+    width: 49.2%;
     border-style: solid;
-    /* border-width: 0px 0px 0px 0px; */
+    border-width: 0px 0px 3px 3px;
     border-color: white;
 }
 .sale {
@@ -235,9 +235,9 @@ section {
     background: url("../images/sale-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
-    width: 50%;
+    width: 49.2%;
     border-style: solid;
-      
+    border-width: 3px 3px 0px 0px;  
     border-color: white;
 }
 .bags {
@@ -250,9 +250,9 @@ section {
     background: url("../images/bags-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
-    width: 50%; 
+    width: 49.2%; 
     border-style: solid;
-    
+    border-width: 3px 0px 0px 3px;
     border-color: white;
 }
 .women {
@@ -267,18 +267,18 @@ section {
     background-size: 100%;
     width: 100%;
     border-style: solid;
-    /* border-width: 6px 0px 0px 0px; */
+    border-width: 6px 0px 0px 0px;
     border-color: white;
 }
 
 .loved span {
     font-family: playfairdisplay-italic;
-    font-size: 32px;
+    font-size: 2em;
 }
 .loved b {
     font-family: playfairdisplay-italic;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2em;
 
 }
 
@@ -296,7 +296,6 @@ section {
     color: #e2574c;
     padding: 5px;
 }
-
 .plugin button {
     background-color: black;
     border-radius: 15px;
@@ -309,7 +308,7 @@ section {
 .form {
     background: url("../images/wave-bkgd.jpg") center no-repeat;
     background-size: 100%;
-    height: 300px;
+    height: 280px;
     width: 100%;
     color: white;
 }
@@ -333,29 +332,31 @@ section {
     position: relative;
     width: 300px;
     height: 15px;
-    padding:12px 40px 12px 12px;
+    padding:15px 40px 15px 15px;
     background:white;
     border-radius: 50px;
     border: none;
-    margin-right: -105px;
+    margin-right: -107px;
+  
 }
-.subscribe {
+.submit {
     position: relative;
-    width: 68px;
-    height: 13px;
+    width: 100px;
+    height: 40px;
     background-color: #e2574c;
     border-style: none;
     border-radius: 20px;
-    padding: 10px 15px;
     text-align: center;
+    color: white;
+
     
 }
 
 footer {
     height: 300px;
-    background-color: #363636;
+    background-color: #242424;
     font-family: playfairdisplay-regular;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 1.5em;
     text-align: center;
     color: white;
@@ -364,22 +365,23 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
 }
 .info span {
-    color: grey;
+    color: #969696
 }
 .address {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    color: grey;
+    color: #969696
 }
 .social {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding: 40px;
+    justify-content: space-evenly;
+    padding: 0px 120px 0px 120px;
+    color: white;
 }
 .social span {
     display: none;
@@ -387,14 +389,148 @@ footer {
 
 /* TABLET VERSION */
 @media (min-width: 600px) {
-    .info {
-    display: inline;
-    }
-    .social span {
-    display: inline;
-    }
 
+footer {
+    display: flex;
+    flex-direction; row;
+    height: 300px;
+    background-color: #242424;
+    font-family: playfairdisplay-regular;
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+    color: white;
 }
+.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: left;
+    padding: 60px 30px 60px 30px;
+    margin: 0px 350px 0px 0px;
+}
+.info span {
+    color: #969696
+}
+.address {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #969696
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: left;
+    justify-content: space-evenly;
+    color: white;
+    padding: 70px 0px 90px 0px;
+}
+.social span {
+    display: inline;
+}
+.categories {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    font-family: raleway;
+    font-size: 20px;   
+}
+.men {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/mens-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 49.8%;
+    border-style: solid;
+    border-width: 0px 6px 6px 0px;
+    border-color: white;
+    
+}
+.trends {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/trends-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 24.3%;
+    border-style: solid;
+    border-width: 0px 6px 6px 0px;
+    border-color: white;
+}
+.glasses {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/glasses-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 24.3%;
+    border-style: solid;
+    border-width: 0px 0px 6px 0px;
+    border-color: white;
+}
+.sale {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/sale-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 24.5%;
+    border-style: solid;
+    border-width: 0px 6px 50px 0px;  
+    border-color: white;
+}
+.bags {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/bags-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 24.5%; 
+    border-style: solid;
+    border-width: 0px 6px 50px 0px;
+    border-color: white;
+}
+.women {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background: url("../images/womens-category.jpg") center no-repeat;
+    height: 180px;
+    background-size: 100%; */
+    width: 49.4%;
+    border-style: solid;
+    border-width: 0px 0px 50px 0px;
+    border-color: white;
+}
+
     /* .form {
         background: url("../images/wave-bkgd.jpg")
         color: white;
