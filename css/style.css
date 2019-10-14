@@ -96,9 +96,9 @@
 
 * {
     box-sizing: border-box;
-    font-size: 14px;
-    
+    font-size: 14px;  
 }
+
 header {
     position: fixed;
     width: 100%;
@@ -115,27 +115,37 @@ header {
 .logo {
     width: 140px;
     height: 60px;
-    /* float: left; */
     margin: 10px 0px 0px 10px;   
     
 }
 .cart {
     width: 50px;
     height: 50px;
-    margin: 10px;
-    /* float: right; */   
+    margin: 10px;  
 }
 
 .nav-items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    font-size: 14px;
-    font-family: raleway;
-    text-transform: uppercase;
-    color: #e2574c;
     padding: 2px 10px 10px 10px;
 }
+
+.nav-items li button {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-family: raleway;
+    color: #e2574c;
+    border: none;
+    background: none;
+}
+
+.nav-items li button:focus {
+    outline: 0;
+    font-weight: bolder; 
+}
+
+
 
 .banner {
     display: flex;
@@ -146,6 +156,7 @@ header {
                 url("../images/flower-bkgd.jpg") center no-repeat;
     background-size: contain, cover;
     color: white;  
+    margin-top: 100px;
 }
 
 .banner h1 {
@@ -164,7 +175,7 @@ section {
 }
 
 .description {
-    padding: 50px 10px;
+    padding: 80px 10px;
 }
 
 .description span {
@@ -200,7 +211,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/mens-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/mens-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
     width: 100%;
@@ -215,7 +226,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/trends-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/trends-category.jpg") center no-repeat;
     display: contain;
     height: 180px;
     background-size: 100%;
@@ -231,7 +242,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/glasses-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/glasses-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
     width: 50%;
@@ -246,7 +257,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/sale-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/sale-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
     width: 50%;
@@ -261,7 +272,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/bags-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/bags-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
     width: 50%; 
@@ -276,7 +287,7 @@ section {
     align-items: center;
     text-align: center;
     color: white;
-    background: url("../images/womens-category.jpg") center no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../images/womens-category.jpg") center no-repeat;
     height: 180px;
     background-size: 100%;
     width: 100%;
@@ -284,13 +295,13 @@ section {
     border-width: 3px 0px 0px 0px;   
 }
 
-br {
-    margin: 20px;
+.loved {
+    padding-top: 30px;
 }
 
 .loved span {
     font-family: playfairdisplay-italic;
-    font-size: 2em;   
+    font-size: 2em; 
 }
 
 .loved b {
@@ -327,24 +338,27 @@ br {
     background-size: 100%;
     height: 280px;
     width: 100%;
-    /* margin-bottom: 10px; */
-    color: white;  
+    color: white; 
 }
 
 .form h2 {
     font-family: playfairdisplay-italic;
     font-size: 30px;
     padding: 50px 20px 0px 20px;
+    justify-content: center;
 }
+
 .form span {
     font-family: playfairdisplay-bold;
     font-size: 30px;
+    justify-content: center;
 }
 
 .form p {
     font-family: raleway-light;
     line-height: 2em;
     text-align: center;
+    justify-content: center;
     padding: 10px;
 }
 
@@ -391,18 +405,25 @@ footer {
     color: #969696
 }
 
+.info a {
+    color: white;
+}
+
 .address {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     color: #969696
 }
-
 .social {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0px 120px 0px 120px;
+    color: white;
+}
+
+.social a {
     color: white;
 }
 
@@ -436,11 +457,16 @@ footer {
     .nav-items {
         display: flex;
         position: relative;
+        font-size: 16px;
         margin-top: -40px;
         margin-left: 150px;
-        margin-right: 120px;
+        margin-right: 110px;
         margin-bottom: 10px;
-        justify-content: space-evenly;
+        justify-content: space-between;
+    }
+
+    .nav-items li button {
+        font-size: 16px;
     }
 
     .cart {  
@@ -449,7 +475,11 @@ footer {
         width: 70px;
         height: 70px;
         margin-top: -10px;
-        padding: 20px 10px 0px 0px;
+        padding: 20px 10px 0px 10px;
+    }
+
+    .banner {
+        margin-top: 70px;
     }
 
     hr {
